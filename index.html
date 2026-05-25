@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Madam Globae ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #050505;
+            color: white;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .bg-glow {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: #6d1028;
+            filter: blur(200px);
+            opacity: 0.35;
+            top: -150px;
+            right: -100px;
+            z-index: -2;
+        }
+
+        .bg-glow2 {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: #35101a;
+            filter: blur(180px);
+            opacity: 0.25;
+            bottom: -200px;
+            left: -150px;
+            z-index: -2;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: #ffcad4;
+            margin-bottom: 20px;
+            animation: fadeDown 1.5s ease;
+        }
+
+        .hero p {
+            color: #ddd;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 35px;
+            animation: fadeUp 2s ease;
+        }
+
+        .open-btn {
+            padding: 15px 35px;
+            border: none;
+            border-radius: 40px;
+            background: #7b1e3a;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.4s;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+            text-decoration: none;
+        }
+
+        .open-btn:hover {
+            transform: scale(1.05);
+            background: #a52d4f;
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width:768px) {
+            .hero h1 {
+                font-size: 2.7rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-glow"></div>
+    <div class="bg-glow2"></div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Happy Birthday ❤️</h1>
+            <p>A little birthday message for someone truly special...</p>
+            <a class="open-btn" href="message.html">Open Message</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
